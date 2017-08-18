@@ -1,0 +1,27 @@
+body{ text-align: center; margin: 5%; background-color: #f0f0f0; font-family: 'Droid Serif', serif;}
+div{  margin: 5%;}
+p{ margin: 0;padding: 0;}
+.add-stock input, #add-symbol{line-height: 30px;padding: 5px 10px;}
+#add-symbol{ background-color: #75ab2f; color: #fff; border-bottom:  .5px solid #9f9a9a; border-radius: 5%; width: 80px;}
+#stock-tiles{font-size: 20px;margin: 50px 150px;}
+input[type=text], .symbol{  color:#787676; width: 180px;}
+.tiles{ display: block; border: 1px solid #fff; background-color: #fff; height: 150px; width: 300px;text-align: left;float: left;border: 1.5px solid #ebebeb;}
+.symb-details{position: relative; float: left;max-width: 200px}
+.cname{font-weight: bold; white-space: nowrap;overflow: hidden;text-overflow:ellipsis;}
+.price{font-size: 25px;}
+.change{ margin-top: 20px;font-size: 15px;}
+.pointer{ color: #9f9a9a; position: absolute;right: 80px;}
+.red{ color: #fc0c1a;}
+.green{color: #0f7f12;}
+.trade-price{ position: relative;width: 300px;}
+.days-high{    margin-bottom: 80px; margin-top: 0;}
+.price-scale{ position: absolute; float: right; right: 0px; border-left: 1px solid #ddd; height: 120px; width: 80px; margin-top: 0;}
+
+@media only screen and (max-width: 500px) {
+    .tiles{ height: 80px; width: 300px; }
+    #stock-tiles{font-size: 15px;margin: 0;}
+    #high-low{ display: none;}
+    .price{ font-size: 20px; }
+    .change{ position: relative;left: 160px;top: -40px;}
+    .price{ position: relative;left: 200px;top: -40px;}
+}
